@@ -31,9 +31,6 @@ class Player
   def move
     @x += @velocity
     @x %= WindowWidth
-
-    @y += @velocity
-    @y %= WindowHeight
     @velocity *= SkidingFactor
   end
 
